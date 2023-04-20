@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.githubpages',
+    'sphinx_multiversion',
 ]
 
 templates_path = ['_templates']
@@ -29,3 +30,14 @@ autoclass_content = 'both'
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+html_sidebars = {
+    '*': [
+        'sidebar/brand.html',
+        'sidebar/search.html',
+        'sidebar/scroll-start.html',
+        'sidebar/navigation.html',
+        'sidebar/versions.html',
+        'sidebar/scroll-end.html',
+    ],
+}
