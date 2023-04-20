@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e .
-          pip install sphinx firo
+          pip install sphinx furo
 
       - name: Sphinx build
         run: |
@@ -34,4 +34,3 @@ jobs:
           github_token: ${{ SECRETS.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
           force_orphan: true
-        
